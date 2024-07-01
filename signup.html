@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+      @import url();
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "poppins", sans-serif;
+      }
+      .ellipse-div {
+        position: absolute;
+        border-radius: 50%;
+        background-color: #ae75ce;
+        filter: blur(19.5vw);
+        width: 40vw;
+        height: 40vw;
+        display: flex;
+        top: -37vh;
+        left: -20vw;
+      }
+      .ellipse-div1 {
+        position: absolute;
+        border-radius: 50%;
+        background-color: #5fdfe6;
+        filter: blur(19.5vw);
+        width: 40vw;
+        height: 40vw;
+        display: flex;
+        top: 63vh;
+        left: 80vw;
+      }
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        background-color: #110326;
+      }
+      .form-box {
+        position: relative;
+        width: 400px;
+        height: 500px;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ffffff;
+        border-radius: 30px;
+      }
+      h2 {
+        font-size: 2em;
+        color: white;
+        text-align: center;
+      }
+      .inputbox {
+        position: relative;
+        margin: 30px 0;
+        width: 310px;
+        border-bottom: 2px solid white;
+      }
+      .inputbox label {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        color: white;
+        font-size: 1em;
+        pointer-events: none;
+        transition: 0.5s;
+      }
+      input:focus ~ label,
+      input:valid ~ label {
+        top: -5px;
+      }
+      .inputbox input {
+        width: 100%;
+        height: 50px;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        padding: 0 35px 0 5px;
+        color: #fff;
+      }
+      .inputbox ion-icon {
+        position: absolute;
+        right: 8px;
+        color: #fff;
+        font-size: 1.2em;
+        top: 20px;
+      }
+      .forget {
+        margin: -15px 0 15px;
+        font-size: 0.9em;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+      }
+      .forget label input {
+        margin-right: 3px;
+      }
+      .forget label a {
+        color: #5FDFE6;
+        text-decoration: none;
+      }
+      .forget label a:hover {
+        text-decoration: underline;
+      }
+      button {
+        width: 100%;
+        height: 40px;
+        border-radius: 40px;
+        background: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: 600;
+      }
+      .signup {
+        font-size: 0.9em;
+        color: #fff;
+        text-align: center;
+        margin: 25px 0 10px;
+      }
+      .signup a{
+        text-decoration: none;
+        color: #5FDFE6;
+        font-weight: 600;
+      }
+      .signup p a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ellipse-div"></div>
+    <div class="ellipse-div1"></div>
+    <section>
+      <div class="form-box">
+        <div class="form-value">
+          <form action="">
+            <h2>Sign Up</h2>
+            <div class="inputbox">
+                <ion-icon name="person-outline"></ion-icon>
+              <input type="user name" required />
+              <label for="">User Name</label>
+            </div>
+            <div class="inputbox">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input type="email" required />
+              <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input type="password" required />
+              <label for="">Password</label>
+            </div>
+            <div class="forget">
+              <label for=""
+                ><input type="checkbox" />I agree to the terms & conditions
+            </div>
+            <button>Sign Up</button>
+            <div class="signup">
+              <p>Already hane an account? <a href="/login.html">Login</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
